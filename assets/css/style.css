@@ -1,0 +1,55 @@
+	body {
+		background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Amazing-Soccer-Background-For-Free.jpg);
+	}
+	#gameHeader {
+		text-align:center;
+		font-weight:900;
+		color:#FFFAFA;
+		font-size:50px;
+		font-family: 'Lobster', cursive;
+	}
+	.jumbotron {
+		background-image:url(http://img.wallpaperfolder.com/f/70C58D1B5C96/fifa-world-cup-trophy.jpg);
+		background-repeat: no-repeat;
+  		background-size: cover;
+		height:600px;
+		margin:100px 200px;
+	}
+	.timeCount {
+		text-align:center;
+		font-size:30px;
+	}
+
+	.startButton {
+		text-align:center;
+		color:#FFFAFA;
+		width:200px;
+		height:60px;
+		opacity:0.5;
+		font-size:20px;
+		margin-top:150px;
+	}
+	.question {
+		text-align:center;
+		font-size:30px;
+		color:#FFFAFA;
+		margin-top:80px;
+	}
+	.answerChoices {
+		text-align:center;
+		font-size:18px;
+		color:#FFFAFA;
+		margin:10px 300px 0 300px;
+		background-color:#696969;
+		padding:15px;
+	}
+	#correctIncorrect {
+		text-align:center;
+		font-size:18px;
+		color:#FFFAFA;
+	}
+
+	#image {
+		height:230px;
+		margin-top:20px;
+	}
