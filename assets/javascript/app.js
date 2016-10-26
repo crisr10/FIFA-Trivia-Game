@@ -80,7 +80,7 @@ var correctAnswer='';
 var timeLeft = 20;
 var counter = 0;
 
-
+$(document).ready(function () {
 $('.startButton').click(function() {
 	displayNext();
 });
@@ -95,7 +95,7 @@ function answerSelection() {
 		userGuess = $(this).data('userGuess');
 		rightAnswer = questions[currentQuestion].rightAnswer;
 		if (userGuess === rightAnswer) {
-			$('.gameBox').html('Correct!').addClass('question');
+			$('.gameBox').html('<div id="correctIncorrectHeader">Correct!</div>');
 			$('.gameBox').append(questions[currentQuestion].legend).addClass('question');
 			$('.gameBox').append(questions[currentQuestion].image);
 			resetTimer();
@@ -103,7 +103,7 @@ function answerSelection() {
 			currentQuestion++;
 			setTimeout(displayNext,6500);
 		} else {
-			$('.gameBox').html('Wrong!').addClass('question');
+			$('.gameBox').html('<div id="correctIncorrectHeader">Wrong!</div>')
 			$('.gameBox').append(questions[currentQuestion].legend).addClass('question');
 			$('.gameBox').append(questions[currentQuestion].image);
 			resetTimer();
@@ -162,7 +162,7 @@ function displayNext () {
 
 function timer() {
 	if (timeLeft === 1) {
-		$('.gameBox').html('<div class="question"><b>Your time is up!</b></div>');
+		$('.gameBox').html('<div id="correctIncorrectHeader"><b>Your time is up!</b></div>');
 		$('.gameBox').append(questions[currentQuestion].legend).addClass('question');
 		$('.gameBox').append(questions[currentQuestion].image);
 		resetTimer();
@@ -178,3 +178,4 @@ function resetTimer () {
 	clearInterval(counter);
 	counter = 0;
 }
+});
