@@ -76,6 +76,7 @@ var correctAnswers = 0;
 var wrongAnswers = 0;
 var userChoise ='';
 var correctAnswer='';
+var timeLeft = 10;
 
 $('.startButton').click(function() {
 	startGame();
@@ -99,14 +100,14 @@ function answerSelection() {
 			$('.gameBox').append(questions[currentQuestion].image);
 			correctAnswers++;
 			currentQuestion++;
-			setTimeout(displayNext, (7*1000));
+			setTimeout(displayNext, (6500));
 		} else {
 			$('.gameBox').html('Wrong!').addClass('question');
 			$('.gameBox').append(questions[currentQuestion].legend).addClass('question');
 			$('.gameBox').append(questions[currentQuestion].image);
 			wrongAnswers++;
 			currentQuestion++;
-			setTimeout(displayNext, (7*1000));
+			setTimeout(displayNext, (6500));
 		}
 	});
 }
@@ -118,17 +119,40 @@ function displayNext () {
 		$('.gameBox').append('<div id="correctIncorrect">Wrong Answers: '+wrongAnswers+'</div>')
 		return false;
 	}
+	resetTimer();
+	var counter = setInterval(timer,1000);
+	$('.gameBox').html('<div class="timeLeft">Time Left: <span id="time">10</span></div>');
 	var questionToAnswer = $('<div>').append(questions[currentQuestion].question).addClass('question');
-	$('.gameBox').html(questionToAnswer);
+	$('.gameBox').append(questionToAnswer);
 
 	var questionsDiv = $('.gameBox');
 
 	for (var i = 0; i<4 ; i++) {
 		var newQuestionsDiv = $('<div>').append(questions[currentQuestion].options[i])
-		.addClass('answerChoices')
+		.addClass('answerChoices hvr-back-pulse')
 		.data('rightAnswer', questions[currentQuestion].rightAnswer)
 		.data('userGuess', questions[currentQuestion].options[i]);
 		questionsDiv.append(newQuestionsDiv);
 	}
 	answerSelection();
+}
+
+
+function timer() {
+	if (timeLeft<1) {
+		$('.gameBox').html('You Run Out of Time!').addClass('question');
+		$('.gameBox').append(questions[currentQuestion].legend).addClass('question');
+		$('.gameBox').append(questions[currentQuestion].image);
+		wrongAnswers++;
+		currentQuestion++;
+		setTimeout(displayNext, 6500)
+		return false;
+	}
+	timeLeft--;
+	$('#time').html(timeLeft);
+}
+
+function resetTimer () {
+	timeLeft = 10;
+	clearInterval(timer);
 }
