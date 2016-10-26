@@ -1,6 +1,5 @@
 	body {
-		background-image: url(../images/grassSoccer.jpg);
-		background-repeat: no-repeat;
+		background-image: url(http://img.wallpaperfolder.com/f/70C58D1B5C96/fifa-world-cup-trophy.jpg);
 		background-size: cover;
 	}
 	#gameHeader {
@@ -13,7 +12,7 @@
 		margin-bottom: 40px;
 	}
 	.jumbotron {
-		background-image:url(http://img.wallpaperfolder.com/f/70C58D1B5C96/fifa-world-cup-trophy.jpg);
+		background-image:url(../images/backgroundWorldCup.jpg);
 		background-repeat: no-repeat;
   		background-size: cover;
 		height:600px;
