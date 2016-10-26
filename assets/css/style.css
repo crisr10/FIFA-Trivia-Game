@@ -11,6 +11,7 @@
 		font-family: 'Lobster', cursive;
 		text-shadow: 4px 4px 4px black;
 		margin-bottom: 40px;
+		letter-spacing: 4px;
 	}
 	.jumbotron {
 		background-image:url(../images/backgroundWorldCup.jpg);
@@ -49,7 +50,6 @@
 		text-align:center;
 		font-size:22px;
 		color:#FFFAFA;
-		margin:10px 300px 0 300px;
 		background-color:#696969;
 		padding:15px;
 		cursor:pointer;
