@@ -1,5 +1,7 @@
 	body {
-		background-color:black;
+		background-image:url(../images/worldCupTrophy.jpg);
+		background-size: cover;
+
 	}
 	#gameHeader {
 		text-align:center;
