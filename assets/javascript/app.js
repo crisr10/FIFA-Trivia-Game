@@ -117,7 +117,7 @@ function answerSelection() {
 function displayNext () {
 	// resetTimer();
 	if (currentQuestion >= questions.length) {
-		$('.gameBox').html('<div class="question">Test Completed</div>');
+		$('.gameBox').html('<div class="question">Let\'s see how you did!</div>');
 		$('.gameBox').append('<div id="correctIncorrect">Correct Answers: '+correctAnswers+'</div>');
 		$('.gameBox').append('<div id="correctIncorrect">Wrong Answers: '+wrongAnswers+'</div>')
 		$('.gameBox').append('<div id="correctIncorrect">Unanswered Questions: '+unanswered+'</div>')
