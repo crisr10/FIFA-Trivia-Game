@@ -20,3 +20,6 @@ FIFA World Cup themed trivia game
 <li>HTML5</li>
 <li>CSS3</li>
 </ul>
+
+<h2>Play Here</h2>
+<a src="https://fifa-worldcup-trivia.herokuapp.com/">Click this link to play</a>
