@@ -7,5 +7,4 @@
 <li>The game let's you know if the answer was correct, incorrect or unanswered.</li>
 </ul>
 
-![alt tag](https://giphy.com/gifs/xTiN0imXHSxpTKuesM)
-
+![alt tag](https://cloud.githubusercontent.com/assets/19739900/23328179/48fa73fe-fad0-11e6-80dc-c2986dc6ed8b.gif)
