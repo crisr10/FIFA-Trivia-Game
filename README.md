@@ -8,7 +8,7 @@ FIFA World Cup themed trivia game
 <li>Answer 10 questions as quickly and efficiently as possible. Players have 20 seconds to answer each multiple choice question.
 <li>The game let's you know if the answer was correct, incorrect or unanswered.</li>
 </ul>
-![alt tag](https://cloud.githubusercontent.com/assets/19739900/23328179/48fa73fe-fad0-11e6-80dc-c2986dc6ed8b.gif)
+![alt tag](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRerU-uO32iYPxds439qqmP9zC_dHrr8xu_FWPubXTz7YR5C82X)
 <ul>
   <li>At the end you get a count of your Right, Wrong and Unanswered questions</li>
 </ul>
